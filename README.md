@@ -5,7 +5,8 @@ A modern restaurant reservation management system built with Laravel 11, PHP 8.2
 
 This project is designed as a professional portfolio project to demonstrate backend development skills, clean project structure, and real-world business logic using Laravel.
 
-THE PROJECT IS UNDER DEVELOPMENT
+The Project is under development
+
 ---
 
 ## Features
@@ -70,4 +71,5 @@ password: 123
 
 ## Autor
 Ali Abdulhameed.
+
 May.2026
