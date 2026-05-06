@@ -1,7 +1,7 @@
 
 # Restaurant Reservation System
 
-A modern restaurant reservation management system built with Laravel 11, PHP 8.2, and Tailwind CSS.
+Restaurant reservation management system built with Laravel 11, PHP 8.2, and Tailwind CSS.
 
 This project is designed as a professional portfolio project to demonstrate backend development skills, clean project structure, and real-world business logic using Laravel.
 
