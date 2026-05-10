@@ -4,7 +4,7 @@
     </x-slot>
 
     <x-content-card>
-        {{ __("You're logged in!") }}
+        {{ __("You're in Category Page") }}
     </x-content-card>
                             
 </x-admin-layout>
