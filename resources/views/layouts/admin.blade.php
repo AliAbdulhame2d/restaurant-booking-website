@@ -15,12 +15,12 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+        <div class="flex flex-col h-screen bg-gray-100">
            
             <!-- Page Heading -->
             @isset($header)
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <header class="hidden md:flex bg-white shadow">
+                    <div class="max-w-7xl mr-auto py-6 px-4 sm:px-6 lg:px-8">
                         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                         {{ $header }}
                         </h2>
@@ -29,8 +29,8 @@
             @endisset
 
         <!-- Add Alpine Sidebar -->
-        <div class="flex-col w-full md:flex md:flex-row md:min-h-screen">
-            <div @click.away="open = false" class="flex flex-col flex-shrink-0 w-full text-gray-700 bg-white md:w-64 dark-mode:text-gray-200 dark-mode:bg-gray-800 border-r border-gray-200 shadow-md" x-data="{ open: false }">
+        <div class="flex-col w-full md:flex md:flex-row md:flex-1 md:overflow-y-auto">
+            <div @click.away="open = false" class="flex flex-col flex-shrink-0 w-full text-gray-700 bg-white md:w-64 dark-mode:text-gray-200 dark-mode:bg-gray-800 border-r border-t border-gray-200 shadow-md" x-data="{ open: false }">
                 <div class="flex flex-row items-center justify-between flex-shrink-0 px-8 py-4">
                     <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Flowtrail UI</a>
                     <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
@@ -81,7 +81,7 @@
                     </nav>
             </div>
             
-            <main class="p-8 w-full ">
+            <main class="p-4 w-full ">
                 {{$slot}}
             </main>
         </div>
