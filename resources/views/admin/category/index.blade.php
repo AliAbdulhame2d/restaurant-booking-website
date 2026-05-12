@@ -1,10 +1,15 @@
 <x-admin-layout>
     <x-slot name="header">
-            {{ __('Dashboard') }}
+            {{ __('Category') }}
     </x-slot>
 
-    <x-content-card>
-        {{ __("You're in Category Page") }}
-    </x-content-card>
-                            
+
+        @php
+            $thead=['Name', 'Category', 'Price'];
+            $cols = ['id', 'customer_name', 'booking_date'];
+            $rows = ['id', 'customer_name', 'booking_date'];                 
+        @endphp
+
+        <x-table :headers="$thead" :columns="$cols" :rows="$rows"/>
+                       
 </x-admin-layout>
