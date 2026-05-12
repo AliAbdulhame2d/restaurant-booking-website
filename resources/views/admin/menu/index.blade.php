@@ -1,10 +1,9 @@
 <x-admin-layout>
     <x-slot name="header">
-            {{ __('Dashboard') }}
+            {{ __('Menu') }}
     </x-slot>
 
-    <x-content-card>
         {{ __("You're in Menu Page") }}
-    </x-content-card>
+
                             
 </x-admin-layout>

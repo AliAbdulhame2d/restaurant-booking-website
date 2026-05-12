@@ -3,8 +3,6 @@
             {{ __('Dashboard') }}
     </x-slot>
 
-    <x-content-card>
         {{ __("You're logged in!") }}
-    </x-content-card>
                             
 </x-admin-layout>
