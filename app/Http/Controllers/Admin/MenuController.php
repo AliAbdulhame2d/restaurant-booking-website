@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Menu;
 
 class MenuController extends Controller
 {
@@ -12,7 +13,8 @@ class MenuController extends Controller
      */
     public function index()
     {
-        return view('admin.menu.index');
+        $menus = Menu::with('categories')->get();
+        return view('admin.menu.index', compact('menus'));
     }
 
     /**
@@ -20,7 +22,7 @@ class MenuController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.menu.create');
     }
 
     /**
