@@ -27,16 +27,20 @@
                 <td class="p-4 border-b border-blue-gray-50">
                     <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
                         <!--to take one value from Database you need $row->$column. example:$row->id, $row->price,.. -->
-                        {{$column}}
+                        {{$row->$column}}
                     </p>
                 </td>
             @endforeach
 
-                <td class="p-4 border-b border-blue-gray-50">
-                    <a href="{{route('admin.'.$baseRoute.'.edit', $row)}}" class="inline-block font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
+                <td class="p-4 border-b border-blue-gray-50 flex items-center">
+                    <a href="{{route('admin.'.$baseRoute.'.edit', $row)}}" class="block mr-1 p-1.5 bg-green-500 text-white border rounded-md font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
                         Edit
                     </a>
-
+                    <form method="POST" action="{{route('admin.'.$baseRoute.'.destroy', $row)}}">
+                      @csrf
+                      @method('DELETE')
+                      <button type="submit" class="block p-1.5 bg-red-500 text-white border rounded-md font-sans text-sm antialiased font-normal leading-normal ">Delete</button>
+                    </form>
                 </td>
         </tr>
         @endforeach

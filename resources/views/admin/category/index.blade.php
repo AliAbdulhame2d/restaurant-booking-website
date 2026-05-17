@@ -2,17 +2,19 @@
     <x-slot name="header">
             {{ __('Category') }}
     </x-slot>
+
+    <x-alert />
     
-      <x-button href="{{route('admin.categories.create')}}" class="inline-block mb-5">
+    <x-button href="{{route('admin.categories.create')}}" class="inline-block mb-5">
         Add Category
       </x-button>
 
 
         @php
             //Table Header
-            $thead = ['Name', 'Image', 'Description'];
+            $thead = ['Name', 'Description', 'Image'];
             //Columns in Database
-            $cols = ['id',	'name',	'image',	'description'];
+            $cols = ['name', 'description',	'image'];
             //Data from Database
             $rows = $categories;
                              
