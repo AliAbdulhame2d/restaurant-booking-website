@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Http\Requests\StoreCategoryRequest;
+use App\Http\Requests\UpdateCategoryRequest;
 
 class CategoryController extends Controller
 {
@@ -60,9 +61,22 @@ class CategoryController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Category $category)
+    public function update(UpdateCategoryRequest $request, Category $category)
     {
-        //
+        $data = $request->validated();
+
+        if($request->hasFile('image')){
+
+            if($category->image){
+                \Storage::disk('public')->delete($category->image);
+            }
+
+            $data['image'] = $request->file('image')->store('categories', 'public');
+        }
+
+        $category->update($data);
+        
+        return redirect()->route('admin.categories.index')->with('success', 'Category Updated Successfully');
     }
 
     /**
