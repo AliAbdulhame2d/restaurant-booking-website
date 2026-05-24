@@ -28,7 +28,12 @@
                 <td class="p-4 border-b border-blue-gray-50">
                   @if ($row->image && ($column == 'image'))
                       <img src="{{asset('storage/'.$row->$column)}}" style="height: 100px; width: 100px; min-height: 100px; min-width: 100px; border-radius: 0%; ">
-          
+                  
+                  @elseif((strpos($column, '_id') !== false))
+                  <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                    <!--to take one value from Database you need $row->$column. example:$row->id, $row->price,.. -->
+                    {{$row->category->name??''}}
+                </p>
                   @else
                       <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
                           <!--to take one value from Database you need $row->$column. example:$row->id, $row->price,.. -->
