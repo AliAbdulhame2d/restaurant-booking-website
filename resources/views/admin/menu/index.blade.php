@@ -9,9 +9,9 @@
 
         @php
             //Table Header
-            $thead = ['Name', 'Price', 'Image', 'Description'];
+            $thead = ['Name', 'Price', 'Category', 'Image', 'Description'];
             //Columns in Database
-            $cols = [	'id',	'name',	'price',	'image',	'description',	'category_id'	];	
+            $cols = ['name',	'price',	'category_id', 'image',	'description'	];	
             //Data from Database
             $rows = $menus;                 
         @endphp
