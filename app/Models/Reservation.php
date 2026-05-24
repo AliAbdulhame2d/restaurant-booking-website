@@ -7,7 +7,7 @@ use App\Models\Table;
 
 class Reservation extends Model
 {
-    public function tables() {
+    public function table() {
         return $this->belongsTo(Table::Class);
     }
 }

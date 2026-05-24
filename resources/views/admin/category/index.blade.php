@@ -2,8 +2,6 @@
     <x-slot name="header">
             {{ __('Category') }}
     </x-slot>
-
-    <x-alert />
     
     <x-button href="{{route('admin.categories.create')}}" class="inline-block mb-5">
         Add Category

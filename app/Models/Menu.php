@@ -7,7 +7,10 @@ use App\Models\Category;
 
 class Menu extends Model
 {
-    public function categories() {
+
+    protected $fillable = ['name', 'price', 'image', 'description','category_id'];
+
+    public function category() {
         return $this->belongsTo(Category::Class);
     }
 }
