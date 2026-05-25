@@ -50,12 +50,19 @@ This project is designed as a professional portfolio project to demonstrate back
 
 ##
 
+###  Categories Index (Mobile Mode)
+
+![Categories](screenshots/admin_categories_mobile.png)
+
+##
 
 ###  Menus Index
 
 ![Menus](screenshots/admin_menus.png)
 
+
 ##
+
 
 ###  Add New Menu
 
