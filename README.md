@@ -50,11 +50,6 @@ This project is designed as a professional portfolio project to demonstrate back
 
 ##
 
-###  Admin Index in Mobile Mode
-
-![Categories](screenshots/admin_categories_mobile.png)
-
-##
 
 ###  Menus Index
 
@@ -80,13 +75,13 @@ This project is designed as a professional portfolio project to demonstrate back
 
 ##
 
-###  Update success Message in Table Index
+###  Update success Message
 
 ![Table](screenshots/admin_tables.png)
 
 ##
 
-###  Update success Message in Table Index (Mobile Mode)
+###  Update success Message (Mobile Mode)
 
 ![Table](screenshots/admin_tables_mobile.png)
 
