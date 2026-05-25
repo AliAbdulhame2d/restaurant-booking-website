@@ -42,13 +42,13 @@ This project is designed as a professional portfolio project to demonstrate back
 
 ![Dashboard](screenshots/admin_dashboard.png)
 
---
+----
 
 ###  Categories Index
 
 ![Categories](screenshots/admin_categories.png)
 
---
+----
 
 ###  Admin Index in Mobile Mode
 
