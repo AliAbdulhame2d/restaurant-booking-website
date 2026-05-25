@@ -9,6 +9,7 @@ This project is designed as a professional portfolio project to demonstrate back
 
 ---
 
+
 ## Features
 
 ### User Side
@@ -32,6 +33,55 @@ This project is designed as a professional portfolio project to demonstrate back
 - Customer management
 - Reservation approval and cancellation
 - Admin-only access using middleware
+
+---
+
+### Screenshots
+
+###  Admin Dashboard
+
+![Dashboard](screenshots/admin_dashboard.png)
+
+
+###  Categories Index
+
+![Categories](screenshots/admin_categories.png)
+
+
+###  Admin Index in Mobile Mode
+
+![Categories](screenshots/admin_categories_mobile.png)
+
+
+###  Menus Index
+
+![Menus](screenshots/admin_menus.png)
+
+
+###  Add New Menu
+
+![Menus](screenshots/admin_menus_create.png)
+
+
+###  Add New Reservation
+
+![Reservation](screenshots/admin_reservations_create.png)
+
+
+###  Edit Reservation
+
+![Reservation](screenshots/admin_reservations_edit.png)
+
+
+###  Update success Message in Table Index
+
+![Table](screenshots/admin_tables.png)
+
+
+###  Update success Message in Table Index (Mobile Mode)
+
+![Table](screenshots/admin_tables_mobile.png)
+
 
 ---
 
@@ -66,7 +116,7 @@ This project is designed as a professional portfolio project to demonstrate back
 
 Admin user is created using Seeder.
 
-username: admin@gmail.
+username: admin@gmail.com
 
 password: 123
 
