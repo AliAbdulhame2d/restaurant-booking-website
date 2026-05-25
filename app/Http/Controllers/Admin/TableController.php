@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Table;
+use App\Http\Requests\StoreTableRequest;
+use App\Http\Requests\UpdateTableRequest;
 
 class TableController extends Controller
 {
@@ -28,9 +30,14 @@ class TableController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreTableRequest $request)
     {
-        //
+
+        $data = $request->validated();
+        
+        Table::create($data);
+
+        return redirect()->back()->with('success', 'Table Created Successfully');
     }
 
     /**
@@ -44,24 +51,30 @@ class TableController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Table $table)
     {
-        //
+        return view('admin.table.edit', compact('table'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(UpdateTableRequest $request, Table $table)
     {
-        //
+       $data = $request->validated();
+       $table->update($data);
+
+       return redirect()->route('admin.tables.index')->with('success', 'Table Updated Successfully');
+
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Table $table)
     {
-        //
+        $table->delete();
+
+        return redirect()->back()->with('success', 'Table Deleted Successfully');
     }
 }
