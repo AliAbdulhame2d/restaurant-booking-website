@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('phone');
             $table->dateTime('reservation_time');
-            $table->enum('status', ['pending', 'confirmed', 'cancelld'])->default('pending');
+            $table->enum('status', ['pending', 'confirmed', 'cancelled'])->default('pending');
             $table->unsignedInteger('guest_count');
             $table->foreignId('table_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
