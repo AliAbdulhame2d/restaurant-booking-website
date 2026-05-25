@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Reservation;
+use App\Models\Table;
+use App\Http\Requests\StoreReservationRequest;
+use App\Http\Requests\UpdateReservationRequest;
 
 class ReservationController extends Controller
 {
@@ -22,15 +25,21 @@ class ReservationController extends Controller
      */
     public function create()
     {
-        return view('admin.reservation.create');
+        $tables = Table::all();
+
+        return view('admin.reservation.create', compact('tables'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreReservationRequest $request)
     {
-        //
+        $data = $request->validated();
+        Reservation::create($data);
+
+        return redirect()->back()->with('success', 'Reservation Created Successfully');
+
     }
 
     /**
@@ -44,24 +53,31 @@ class ReservationController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Reservation $reservation)
     {
-        //
+        $tables = Table::all();
+        return view('admin.reservation.edit', compact('reservation', 'tables'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(UpdateReservationRequest $request, Reservation $reservation)
     {
-        //
+        $data = $request->validated();
+        $reservation->update($data);
+
+        return redirect()->route('admin.reservations.index')->with('success', 'Reservation Updated Successfully');
+
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Reservation $reservation)
     {
-        //
+        $reservation->delete();
+
+        return redirect()->route('admin.reservations.index')->with('success', 'Reservation Deleted Successfully');
     }
 }
