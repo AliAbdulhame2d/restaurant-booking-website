@@ -1,6 +1,6 @@
 <x-admin-layout>
     <x-slot name="header">
-        {{__('Create Reservation')}}
+        {{__('Update Reservation')}}
     </x-slot>
 <form action="{{route('admin.reservations.update', $reservation)}}" method="POST" enctype="multipart/form-data">
     @csrf
