@@ -11,7 +11,7 @@
             //Table Header
             $thead=['Table Number', 'Capacity', 'Location'];
             //Columns in Database
-            $cols = ['id',	'table_number',	'capacity',	'location'];
+            $cols = ['table_number',	'capacity',	'location'];
             //Data from Database
             $rows = $tables;                
         @endphp

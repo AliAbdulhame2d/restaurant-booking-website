@@ -10,9 +10,9 @@
 
         @php
             //Table Header
-            $thead = ['First Name', 'Last Name', 'Email', 'Phone', 'Reservation Time', 'Status', 'Guest Count'];
+            $thead = ['First Name', 'Last Name', 'Email', 'Phone', 'Reservation Time', 'Status', 'Guest Count', 'Table'];
             //Columns in Database
-            $cols = ['id',	'first_name',	'last_name',	'email',	'phone',	'reservation_time',	'status',	'guest_count',	'table_id', 'created_at	'];
+            $cols = ['first_name',	'last_name',	'email',	'phone',	'reservation_time',	'status',	'guest_count',	'table_id'];
             //Data from Database
             $rows = $reservations;
                             
