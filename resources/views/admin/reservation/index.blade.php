@@ -15,7 +15,7 @@
             $cols = ['first_name',	'last_name',	'email',	'phone',	'reservation_time',	'status',	'guest_count',	'table_id'];
             //Data from Database
             $rows = $reservations;
-                            
+                             
         @endphp
 
         <x-table :headers="$thead" :columns="$cols" :rows="$rows" baseRoute="reservations"/>
