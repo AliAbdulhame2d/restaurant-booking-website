@@ -1,12 +1,99 @@
 # 🍽️ Restaurant Reservation System
 
-A modern **Restaurant Reservation System** developed with **Laravel 11**, following Laravel best practices and clean software architecture.
+**Restaurant Reservation System** developed with **Laravel 11**, following Laravel best practices and clean software architecture.
 
 The project combines a responsive customer-facing restaurant website with a complete administration panel for managing restaurant operations.
 
 It was built as a portfolio project to demonstrate professional backend development skills, clean project organization, CRUD operations, Eloquent relationships, validation, authentication, middleware, reusable Blade components and responsive UI development.
 
 > **Project Status:** Version 1.0
+
+---
+
+# Screenshots
+
+## 🏠 Home Page
+
+
+![Home Page](screenshots/home.png)
+
+---
+
+
+## Signature Dishes
+
+![Signature Dishes](screenshots/signature-dishes.png)
+
+
+
+---
+
+## Dynamic Menu
+
+
+![Menu](screenshots/menu.png)
+
+
+---
+
+## Reservation Form
+
+
+![Reservation Form](screenshots/reservation-form.png)
+
+---
+
+## Admin Dashboard
+
+![Dashboard](screenshots/admin_dashboard.png)
+
+---
+
+## Categories Index
+
+![Categories](screenshots/admin_categories.png)
+
+---
+
+## Categories Index (Mobile)
+
+![Categories](screenshots/admin_categories_mobile.png)
+
+---
+
+## Menus Index
+
+![Menus](screenshots/admin_menus.png)
+
+---
+
+## Create Menu
+
+![Menus](screenshots/admin_menus_create.png)
+
+---
+
+## Create Reservation
+
+![Reservation](screenshots/admin_reservations_create.png)
+
+---
+
+## Edit Reservation
+
+![Reservation](screenshots/admin_reservations_edit.png)
+
+---
+
+## Tables
+
+![Tables](screenshots/admin_tables.png)
+
+---
+
+## Tables (Mobile)
+
+![Tables](screenshots/admin_tables_mobile.png)
 
 ---
 
@@ -160,92 +247,6 @@ database/
 
 ---
 
-# Screenshots
-
-## 🏠 Home Page
-
-
-![Home Page](screenshots/home.png)
-
----
-
-
-## Signature Dishes
-
-![Signature Dishes](screenshots/signature-dishes.png)
-
-
-
----
-
-## Dynamic Menu
-
-
-![Menu](screenshots/menu.png)
-
-
----
-
-## Reservation Form
-
-
-![Reservation Form](screenshots/reservation-form.png)
-
----
-
-## Admin Dashboard
-
-![Dashboard](screenshots/admin_dashboard.png)
-
----
-
-## Categories Index
-
-![Categories](screenshots/admin_categories.png)
-
----
-
-## Categories Index (Mobile)
-
-![Categories](screenshots/admin_categories_mobile.png)
-
----
-
-## Menus Index
-
-![Menus](screenshots/admin_menus.png)
-
----
-
-## Create Menu
-
-![Menus](screenshots/admin_menus_create.png)
-
----
-
-## Create Reservation
-
-![Reservation](screenshots/admin_reservations_create.png)
-
----
-
-## Edit Reservation
-
-![Reservation](screenshots/admin_reservations_edit.png)
-
----
-
-## Tables
-
-![Tables](screenshots/admin_tables.png)
-
----
-
-## Tables (Mobile)
-
-![Tables](screenshots/admin_tables_mobile.png)
-
----
 
 # Admin Authentication
 
