@@ -18,9 +18,9 @@
             <div>
                 <h4 class="font-bold mb-4">Contact Info</h4>
                 <ul class="space-y-2 text-gray-400">
-                    <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt"></i> 123 Indiranagar Main Road, Bengaluru, KA 560038</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-phone-alt"></i> (123) 456-7890</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-envelope"></i> info@savorybites.com</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt"></i> Karl-Marx-Str 151, 12529 Schönefeld</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-phone-alt"></i> +49/17630521739</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-envelope"></i> aliabdulhameedeng@gmail.com</li>
                 </ul>
             </div>
             <div>
