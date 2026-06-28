@@ -27,7 +27,7 @@ class StoreReservationRequest extends FormRequest
             'email' => 'required|email|unique:reservations,email',
             'phone' => 'required|string|max:20',
             'reservation_time' => 'required|date|after:now',
-            'status' => 'required|in:pending,confirmed,cancelled',
+            'status' => 'sometimes|in:pending,confirmed,cancelled',
             'guest_count' => 'required|integer|min:1',
             'table_id' => 'required|exists:tables,id'
 
