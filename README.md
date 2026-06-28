@@ -15,38 +15,16 @@ It was built as a portfolio project to demonstrate professional backend developm
 ## Customer Website
 
 - Modern responsive landing page
-- Responsive navigation bar
-- Hero section with Call-to-Action buttons
-- Smooth scrolling navigation
 - Restaurant gallery
-- Dynamic "Signature Dishes" section
-- Dynamic "Our Menu" section
 - Dynamic menu categories
 - Dynamic menu items
-- JavaScript category filtering
-- Restaurant story section
-- Customer testimonials
-- Contact section
+- JavaScript category filteringn
 - Online reservation form
 - Reservation form validation
 - Responsive design for desktop, tablet and mobile
 
 ---
 
-## Reservation System
-
-Customers can
-
-- Reserve a table online
-- Enter personal information
-- Select reservation date & time
-- Select number of guests
-- Submit reservation request
-- Receive validation feedback
-
-Reservations are stored directly in the database using Laravel.
-
----
 
 # Administration Panel
 
@@ -64,7 +42,6 @@ Administrator can
 - Delete
 - Update
 
-all restaurant data through a responsive dashboard.
 
 ---
 
@@ -78,11 +55,8 @@ all restaurant data through a responsive dashboard.
 - Eloquent ORM
 - Eloquent Relationships
 - Form Request Validation
-- File Upload
-- Image Storage
 - Authentication
-- Authorization
-- Admin Middleware
+- Admin Midlleware
 - Session Flash Messages
 - Reusable Blade Components
 - Reusable Form Partials
@@ -98,16 +72,10 @@ Implemented frontend features include
 
 - Dynamic Homepage
 - Dynamic Menu Categories
-- Dynamic Signature Dishes
-- Dynamic Menu Items
 - Responsive Layout
 - Blade Layouts
 - Blade Components
-- Smooth Navigation
 - Interactive JavaScript Menu Tabs
-- Responsive Navigation
-- Reservation Form Integration
-- Dynamic Content loaded from MySQL Database
 
 ---
 
@@ -189,8 +157,6 @@ database/
 - Partial Views
 - Reusable Forms
 - Session Flash Messages
-- Image Upload
-- Responsive Design
 
 ---
 
@@ -198,51 +164,32 @@ database/
 
 ## 🏠 Home Page
 
-*(Add screenshot here)*
 
-```
-screenshots/home.png
-```
+![Home Page](screenshots/home.png)
 
 ---
 
-## Hero Section
-
-*(Add screenshot here)*
-
-```
-screenshots/hero.png
-```
-
----
 
 ## Signature Dishes
 
-*(Add screenshot here)*
+![Signature Dishes](screenshots/signature-dishes.png)
 
-```
-screenshots/signature-dishes.png
-```
+
 
 ---
 
 ## Dynamic Menu
 
-*(Add screenshot here)*
 
-```
-screenshots/menu.png
-```
+![Menu](screenshots/menu.png)
+
 
 ---
 
 ## Reservation Form
 
-*(Add screenshot here)*
 
-```
-screenshots/reservation-form.png
-```
+![Reservation Form](screenshots/reservation-form.png)
 
 ---
 
