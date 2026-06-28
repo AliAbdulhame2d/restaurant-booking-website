@@ -8,9 +8,12 @@ use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\ReservationController;
 use App\Http\Controllers\Admin\TableController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\ReservationController as FrontendReservationController;
+
+
+Route::get('/', [HomeController::Class, 'index'])->name('home');
+Route::resource('reservations', FrontendReservationController::Class);
 
 Route::get('/dashboard', function () {
     return view('frontend.dashboard');
